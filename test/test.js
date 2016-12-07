@@ -2,11 +2,8 @@ const assert = require('assert');
 const getPrimeByIndex = require('./../index').getPrimeByIndex;
 suite ('getPrimeByIndex',function(){
 	test('getPrimeByIndex should return {input: output} data',function(){
-//		console.log("{")
-//		for(var n = 1;n < 100;n++){
-//			console.log(n+':'+getPrimeByIndex(n));
-//		}
-//		console.log("}");
- 		assert.equal(2,getPrimeByIndex(2));
+		const res = getPrimeByIndex();
+		//console.log(res[2]);
+ 		assert.equal(3,res[1]);
 	})
 });
